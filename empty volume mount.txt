@@ -1,0 +1,14 @@
+IF U WANT TO CREATE NEW VOLUME AND ATTACH WITH LINUX INSTANCE
+
+1.file -s /dev/xvdf
+/dev/xvdf :data 
+Then It is NO data It is Empty One
+2.mkfs -t ext4 /dev/xvdf
+3.mkdir /new_vol
+4.mount /dec/xvdf /new_vol
+5.df -hT
+6.IF U PUT PERMINENYLY
+
+vi /etc/fstab
+To mount it permenantley use /etc/fstab and add the following
+/dev/xvdf /folderName ext4 defaults,nofail,0 0
