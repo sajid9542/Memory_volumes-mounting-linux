@@ -1,0 +1,62 @@
+
+
+Hello,
+
+Hope you are doing well!!
+
+Thank you for contacting AWS Premium Support. My name is Damini and I will be assisting you with this case today.
+
+From the case description, I understand that you are trying to transfer data /application between Windows server from Rackspace to AWS EC2 and you are looking for an advice on FTP vs SFTP to transfer data.  As this query is unsupported for us I will try our best to help you over the same on a best effort basis.
+
+FTP and SFTP both are used to transfer data but they have some differences-
+
+[1] FTP doesn’t provide a secure channel to transfer files between hosts whereas SFTP offers a secure channel for transferring files between the hosts.
+[2] FTP stands for is “File Transfer Protocol” whereas SFTP stands for is “SSH File Transfer Protocol”.
+[3] FTP uses 2 channels to transfer data while SFTP usage 1 channel to transfer data.
+[4] FTP allows inbound connection on port 21 whereas SFTP allows incoming connections on port 22.
+[5] FTP doesn’t provide encryption whereas SFTP provides encryption for sending the data.
+[6] FTP uses Client-server architecture whereas SFTP uses SSH architecture.
+[7] FTP has a direct transfer method whereas SFTP has a tunneling transfer method.
+
+SFTP will always be significantly slower than FTP or FTPS. The reason for the difference is that there is a lot of additional packet, encryption and handshaking overhead inherent in the SSH2 protocol that FTP doesn't have to worry about. FTP is a very lean and comparatively simple protocol. The protocol was specifically designed for transferring files quickly. I hope this answers your query regarding which protocol (FTP or SFTP) to use to quickly transfer the data.
+AWS Transfer for SFTP (AWS SFTP) is a fully managed AWS service that enables you to transfer files over Secure File Transfer Protocol (SFTP), into and out of Amazon Simple Storage Service (Amazon S3) storage. SFTP is also known as Secure Shell (SSH) File Transfer Protocol.
+
+Common use cases for AWS SFTP are the following:
+[1] Data lakes in AWS for uploads from third parties such as vendors and partners.
+[2] Subscription-based data distribution with your customers.
+[3]Internal transfers within your organization.
+
+To transfer data/application from Rackspace Windows’s server to AWS EC2 please check the link below-
+https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-for-sftp.html
+
+I hope the above information helps you. In case I missed to address any of your concerns or you have any further queries, please feel free to reach me and I will be glad to address them all.
+
+References:
+----------------------------------------------
+[1] FTP vs SFTP:  https://www.guru99.com/ftp-vs-sftp.html
+[2] What Is AWS Transfer for SFTP? https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-for-sftp.html
+
+Best regards,
+
+Damini K.
+Amazon Web Services
+
+Check out the AWS Support Knowledge Center, a knowledge base of articles and videos that answer customer questions about AWS services: https://aws.amazon.com/premiumsupport/knowledge-center/?icmpid=support_email_category
+
+We value your feedback. Please rate my response using the link below.
+===================================================
+
+To contact us again about this case, please return to the AWS Support Center using the following URL:
+
+https://console.aws.amazon.com/support/home#/case/?displayId=6700478421&language=en
+
+(If you are connecting by federation, log in before following the link.)
+
+*Please note: this e-mail was sent from an address that cannot accept incoming e-mail. Please use the link above if you need to contact us again about this same issue.
+
+====================================================================
+Learn to work with the AWS Cloud. Get started with free online videos and self-paced labs at
+http://aws.amazon.com/training/
+====================================================================
+
+Amazon Web Services, Inc. and affiliates
