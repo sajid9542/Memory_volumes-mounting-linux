@@ -1,0 +1,53 @@
+Hello,
+
+Greetings for the day!
+
+Thank you for contacting AWS Premium Support. I am Suhas from S3 team and I will be glad to assist you with your case today.
+
+As I understand from the case description that you two different domains with same Website containts and want to know how you can serve these two domains with single S3 bucket.
+
+Using CloudFront in front of S3 bucket, you can serve two different domains with single S3 bucket as an Origin to CloudFront Distribution. You can serve up to 100 alternate domains using one CloudFront Distribution.
+
+WorkFlow:
+www.example.com/www.example.in >> CloudFront Distribution >> CloudFront Origin (S3 Bucket).
+
+As per above work flow, both the domains will be added to CloudFront Distribution and served with the same content in S3 bucket attached as an Origin. For more information and steps to configure CloudFront, please refer a Video at [1].
+
+I hope you found the above information helpful. Please let me know if you require any further assistance.
+
+In case if I misunderstood the request, please explain your use case requirements in more details and I will be happy to look into it.
+
+Have a great day ahead.
+
+References:
+[1] Video: https://aws.amazon.com/premiumsupport/knowledge-center/multiple-domains-https-cloudfront/
+[2] https://www.youtube.com/watch?v=KIltfPRpTi4
+[3] https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/
+
+Best regards,
+
+Suhas B.
+Amazon Web Services
+
+Check out the AWS Support Knowledge Center, a knowledge base of articles and videos that answer customer questions about AWS services: https://aws.amazon.com/premiumsupport/knowledge-center/?icmpid=support_email_category
+
+We value your feedback. Please rate my response using the link below.
+===================================================
+
+To contact us again about this case, please return to the AWS Support Center using the following URL:
+
+https://console.aws.amazon.com/support/home#/case/?displayId=6673768961&language=en
+
+(If you are connecting by federation, log in before following the link.)
+
+*Please note: this e-mail was sent from an address that cannot accept incoming e-mail. Please use the link above if you need to contact us again about this same issue.
+
+====================================================================
+Learn to work with the AWS Cloud. Get started with free online videos and self-paced labs at
+http://aws.amazon.com/training/
+====================================================================
+
+Amazon Web Services, Inc. is an affiliate of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com, Inc. or its affiliates.
+Attachments area
+Preview YouTube video How to Set up an Amazon CloudFront Distribution for Your Amazon S3 Origin
+
