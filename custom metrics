@@ -1,0 +1,40 @@
+Hi,
+
+Thank you for reaching out to AWS Premium Support. My name is Prankit working here with the Networking Team and I will be assisting you with your case today.
+As I can see you want our help in setting up custom metrics for servers to view the metrices for memory utilization, ram utilization, root volume and other volume free space. You can do this by using unified CloudWatch agent. A high view of steps looks like:
+1.      Installing the CloudWatch Agent.
+2.      Attach the IAM Policy/Role so that instance receives permission to push data to CloudWatch
+3.      Create the CloudWatch Agent Configuration File.
+4.      Start the agent.
+
+For the step by step procedure, you can use the following document of AWS :
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html
+
+For your second issue that a week ago your Instance’s CPU utilization was 30% and now it is 9%, I tried troubleshooting the issue but as you have not mentioned the Instance ID and the region in which it is running, I am unable to find the resources. So, I request you to provide the specific Instance id and the Region in which you want to check this issue. I will be waiting for your response, so that I can help you in resolving this problem.
+
+If you have any problem regarding the setting up of CloudWatch metrices also please reach to me. I will be happy to help you out.
+
+Best regards,
+
+Prankit M.
+Amazon Web Services
+
+Check out the AWS Support Knowledge Center, a knowledge base of articles and videos that answer customer questions about AWS services: https://aws.amazon.com/premiumsupport/knowledge-center/?icmpid=support_email_category
+
+We value your feedback. Please rate my response using the link below.
+===================================================
+
+To contact us again about this case, please return to the AWS Support Center using the following URL:
+
+https://console.aws.amazon.com/support/home#/case/?displayId=6671473121&language=en
+
+(If you are connecting by federation, log in before following the link.)
+
+*Please note: this e-mail was sent from an address that cannot accept incoming e-mail. Please use the link above if you need to contact us again about this same issue.
+
+====================================================================
+Learn to work with the AWS Cloud. Get started with free online videos and self-paced labs at
+http://aws.amazon.com/training/
+====================================================================
+
+Amazon Web Services, Inc. is an affiliate of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com, Inc. or its affiliates.
