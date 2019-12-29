@@ -1,0 +1,13 @@
+Migrating from RDS to EC2 MySQL using mysqldump
+This is the recommended method of migrating databases between servers.
+
+Run this command to export the database contents.
+
+mysqldump -u root -p -h RDS_HOST_NAME DATABASE_NAME> /tmp/databasename.sql
+Run the following commands to log into MySQL, create a new database, and import the dump you created.
+
+mysql -u root -p   (followed by the password when prompted)
+create database mydb;
+use mydb;
+source /tmp/databasename.sql;
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON DATABASENAME.* TO 'USER'@'localhost' IDENTIFIED BY 'INSERT_PASSWORD'
